@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main(){
 	int i;
 	int j;
 	
@@ -12,14 +11,12 @@ int main()
 	printf("<table>\n");
 	printf("<tr>\n");
 	
-	for (i = 0 ; i < 10 ; ++i)
-	{
+	for (i = 0 ; i < 10 ; ++i){
 		if (i == 0) printf("<th>\n");
 		else printf("<th>%d\n",i);
 	}
 
-	for ( i = 1 ; i < 10 ; ++i)
-	{
+	for ( i = 1 ; i < 10 ; ++i){
 		printf("<tr>\n");
 		printf("<th>%d\n",i);
 		for( j = 1; j < 10 ; ++j)
