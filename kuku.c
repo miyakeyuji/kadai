@@ -19,8 +19,7 @@ int main(){
 	for ( i = 1 ; i < 10 ; ++i){
 		printf("<tr>\n");
 		printf("<th>%d\n",i);
-		for( j = 1; j < 10 ; ++j)
-		{
+		for( j = 1; j < 10 ; ++j){
 			printf("<td>%d\n" , i* j);
 		}
 	}
