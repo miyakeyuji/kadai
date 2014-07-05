@@ -1,0 +1,181 @@
+    1  ls
+    2  ls
+    3  cc
+    4  exit
+    5  cc
+    6  cc hello.c
+    7  ls
+    8  ./a.ext
+    9  ./a.exe
+   10  echo $?
+   11  echo $?
+   12  ./a.exe
+   13  ./a.exe
+   14  echo $?
+   15  cat hello.c
+   16  cat hello.c
+   17  cc hello.c
+   18  ./ a.exe
+   19  echo $?
+   20  ./a.exe
+   21  echo $?
+   22  cat hello.c
+   23  cat hello.c
+   24  cc hello.c
+   25  ./a.exe
+   26  $?
+   27  $?4/
+   28  echo $?
+   29  cc hello.c
+   30  cc hello.c
+   31  ./a.exe
+   32  history
+   33  echo $?
+   34  cc hello.c
+   35  cat hello.c
+   36  ./a.exe
+   37  echo $?
+   38  alias
+   39  ls
+   40  cat a.html
+   41  cat a.html
+   42  cat a.html
+   43  cat a.html
+   44  ls
+   45  cc kuku.c
+   46  cc kuku.c
+   47  cc kuku.c
+   48  cc kuku.c
+   49  cc kuku.c
+   50  cc kuku.c
+   51  ./a.exe
+   52  ls
+   53  cc kuku.c
+   54  ./a.exe
+   55  cc kuku.c
+   56  ./a.exe
+   57  cc kuku.c
+   58  cc kuku.c
+   59  ./a.exe
+   60  cc kuku.c
+   61  ./a.exe
+   62  cc kuku.c
+   63  ./a.exe
+   64  cc kuku.c
+   65  ./a.exe
+   66  cc kuku.c
+   67  ./a.exe
+   68  cc kuku.c
+   69  cc kuku.c
+   70  cc kuku.c
+   71  ./a.exe
+   72  cc kuku.c
+   73  ./a.exe
+   74  cc kuku.c
+   75  ./a.exe
+   76  cc kuku.c
+   77  ./a.exe
+   78  cc kuku.c
+   79  ./a.exe
+   80  cc kuku.c
+   81  ./a.exe
+   82  cc kuku.c
+   83  cc kuku.c
+   84  ./a.exe
+   85  cc kuku.c
+   86  ./a.exe
+   87  cc kuku.c
+   88  ./a.exe
+   89  cc kuku.c
+   90  ./a.exe
+   91  cc kuku.c
+   92  cc kuku.c
+   93  ./a.exe
+   94  cc kuku.c
+   95  ./a.exe
+   96  cc kuku.c
+   97  ./a.exe
+   98  cc kuku.c
+   99  ./a.exe
+  100  exit
+  101  ls
+  102  ls -F
+  103  git add a.c
+  104  cat ~/.bash_profile
+  105  cat ~/.bash_history
+  106  ls
+  107  cat ~/.bashrc
+  108  cat ~/.bashrc
+  109  cd vantan
+  110  cd /vantan
+  111  cat ~/.bash_profile
+  112  alias
+  113  cat ~/.bashrc
+  114  cat ~/.bashrc
+  115  cat ~/.bashrc
+  116  l
+  117  cat ~/.bashrc
+  118  . ~/.bashrc
+  119  l
+  120  ls --help
+  121  . ~/.bashrc
+  122  cat ~/.bashrc
+  123  l
+  124  git return
+  125  git
+  126  cd 
+  127  cd documdnts
+  128  cd /cygdrive/c/users/vantan/Documents/github/
+  129  ls
+  130  cd
+  131  /cygdrive/c/users/vantan/Documents/take\ kadai/
+  132  cd /cygdrive/c/users/vantan/Documents/take\ kadai/
+  133  ls
+  134  alias
+  135  history
+  136  cat ~/.bash_profile
+  137  cat ~/.bash_profile
+  138  cat ~/.bashrc
+  139  l
+  140  l
+  141  l
+  142  cat ~/.bash_profile
+  143  l
+  144  l
+  145  l
+  146  cat ~/.bashrc
+  147  . ~/.bashrc
+  148  l
+  149  od -x .bashrc
+  150  cc 20140524testpro.c
+  151  history
+  152  . a.exee
+  153  . a.exe
+  154  ~
+  155  ./ a.exe
+  156  ./ a.exe
+  157  ./a/exe
+  158  ./a.exe
+  159  cd
+  160  cc
+  161  cd /cygdrive/c/users/vantan/Documents/take kadai
+  162  cd /cygdrive/c/users/vantan/Documents/take kadai/
+  163  cd cygdrive/c/users/vantan/Documents/take kadai/
+  164  cd cygdrive/c/users/vantan/Documents/
+  165  cygdrive/c/users/vantan/Documents/
+  166  cd cygdrive/c/users/vantan/
+  167  cd cygdrive/c/
+  168  history
+  169  cd /cygdrive/c/users/vantan/Documents/github/
+  170  ./a.exe >out.txt
+  171  cc
+  172  cc 20140524testpro.c
+  173  ./a.exe >out.txt
+  174  git status
+  175  git
+  176  git status
+  177  yes
+  178  history
+  179  cd cygdrive/c/users/vantan/Documents/take kadai/
+  180  cd /cygdrive/c/users/vantan/Documents/take\ kadai/
+  181  history >history.txt
