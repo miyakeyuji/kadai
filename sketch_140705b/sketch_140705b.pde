@@ -19,8 +19,8 @@ class Mover{
   }
 }
 
-Mover mover;
-Mover movers;
+Mover moverSmall;
+Mover moverLarge;
 float Checkr;
 float x;
 float y;
@@ -34,15 +34,15 @@ float cd2;
 void setup(){
   size(300,300);
   colorMode(HSB);
-  mover = new Mover();
-  movers = new Mover();
-  movers.cr += 100;
+  moverSmall = new Mover();
+  moverLarge = new Mover();
+  moverLarge.cr += 100;
 }
 
 void draw(){
   background(0,0,0);
-  movers.draw();
-  mover.draw();
+  moverLarge.draw();
+  moverSmall.draw();
 
   text(d2,10,10);
   text(cd2,20,20);
@@ -51,16 +51,16 @@ void draw(){
   x = mouseX;
   y = mouseY;
 
-  dx = x - mover.cx;
-  dy = y - mover.cy;
+  dx = x - moverSmall.cx;
+  dy = y - moverSmall.cy;
   d2 = (dx * dx) + (dy * dy);
 
-  cdx = mover.cx - movers.cx;
-  cdy = mover.cy - movers.cy;
+  cdx = moverSmall.cx - moverLarge.cx;
+  cdy = moverSmall.cy - moverLarge.cy;
   cd2 = (cdx * cdx) + (cdy * cdy);
 
-  line(mover.cx,mover.cy,x,y);
-  line(mover.cx,mover.cy,movers.cx,movers.cy);
+  line(moverLarge.cx,moverLarge.cy,x,y);
+  line(moverSmall.cx,moverSmall.cy,moverLarge.cx,moverLarge.cy);
   fill(0);
 }
 
@@ -71,14 +71,22 @@ void mousePressed(){
 void mouseDragged(){
   println("mouseDragged");
   
-  if((movers.cr - mover.cr) * (movers.cr - mover.cr) > cd2){
-    if (mover.cr * mover.cr > d2){
-      mover.cx = mouseX - dx;
-      mover.cy = mouseY - dy;
+  if((moverLarge.cr - moverSmall.cr) * (moverLarge.cr - moverSmall.cr) > cd2){
+    if (moverSmall.cr * moverSmall.cr > d2){
+      moverSmall.cx = mouseX - dx;
+      moverSmall.cy = mouseY - dy;
     }
   }else{
-    mover.cx = movers.cx - dx;
-    mover.cy = movers.cy - dy;
+     float _x = x - moverLarge.cx;
+     float _y = y - moverLarge.cy;
+
+     float checkRadian = _x * _x + _y * _y;
+     checkRadian = sqrt(checkRadian);
+     
+     float ratio = (moverLarge.cr - moverSmall.cr) / checkRadian;
+     
+      moverSmall.cx = mouseX * ratio;
+      moverSmall.cy = mouseY * ratio;
   }
 }
 
